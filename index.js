@@ -1,5 +1,5 @@
-let homeScore = 12;
-let guestScore = 5;
+let homeScore = 0;
+let guestScore = 0;
 
 function addPoints(team, points) {
     if (team === "home") {
