@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #d9dfdb;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.scoreboard {
+    background: #1b2560;
+    border: 6px solid #f2f2f2;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    width: 700px;
+    max-width: 90%;
+    padding: 40px 50px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.team {
+    text-align: center;
+}
+
+.team h3 {
+    color: #eeeeee;
+    font-size: 3rem;
+    margin: 0 0 20px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.score-box {
+    width: 190px;
+    height: 130px;
+    background: #120004;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 28px;
+    transition: box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.score-box span {
+    font-size: 6rem;
+    color: #ff4f7b;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.buttons button {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #8ea1d2;
+    border-radius: 8px;
+    color: #b8c7ef;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.buttons button:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-2px);
+}
+
+.leading {
+    box-shadow: 0 0 18px rgba(0, 255, 100, 0.5);
+    border: 2px solid #1eff7a;
+}
+
+.leading-title {
+    color: #4dff88 !important;
+}
+
+@media (max-width: 700px) {
+    .scoreboard {
+        flex-direction: column;
+        gap: 35px;
+        align-items: center;
+    }
+
+    .team h3 {
+        font-size: 2.2rem;
+    }
+
+    .score-box {
+        width: 170px;
+        height: 120px;
+    }
+
+    .score-box span {
+        font-size: 5rem;
+    }
+}
